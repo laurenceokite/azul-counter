@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+.board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-board {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 31rem;
+    height: 31rem;
+    padding: .5rem;
+    background-image: linear-gradient(310deg,  rgb(194, 178, 128, 0.9), rgb(194, 178, 128, 0.9)), url(../images/sand.jpg);
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.tile-board div {
+    width: 5rem;
+    height: 5rem;
+    margin: .5rem;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 1rem;
+}
+
+.tile-select {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    width: 7rem;
+    height: 31rem;
+    padding: .5rem;
+    background-image: linear-gradient(310deg,  rgb(194, 178, 128, 0.9), rgb(194, 178, 128, 0.9)), url(../images/sand.jpg);
+    background-size: cover;
+    background-position: 125%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.tile-select div {
+    width: 5rem;
+    height: 5rem;
+    margin: .5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover {
+    border: dashed 1px black;
+}
+
+#blue {
+    background-color: blue;
+}
+#red {
+    background-color: red;
+}
+#yellow {
+    background-color: #f2c530;
+}
+#yellow img {
+    content: url(../images/SVG/JS-14_2.svg);
+    height: 80%;
+    width: 80%;
+    color: red;
+}
+#black {
+    background-color: black;
+}
+#teal {
+    background-color: teal;
+}
+
+div[data-color="blue"] {
+    background-color: blue;
+    box-shadow: -1px -1px 18px 2px rgb(0, 0, 0, 0.3),
+    inset -3px -3px 10px 4px rgb(255, 255, 255, 0.2);
+}
+div[data-color="red"] {
+    background-color: red;
+    box-shadow: -1px -1px 18px 2px rgb(0, 0, 0, 0.3),
+    inset -3px -3px 10px 4px rgb(255, 255, 255, 0.2);
+}
+div[data-color="yellow"] {
+    background-color: #f2c530;
+    box-shadow: -1px -1px 18px 2px rgb(0, 0, 0, 0.3),
+    inset -3px -3px 10px 4px rgb(255, 255, 255, 0.2);
+}
+div[data-color="black"] {
+    background-color: black;
+    box-shadow: -1px -1px 18px 2px rgb(0, 0, 0, 0.3),
+    inset -3px -3px 10px 4px rgb(255, 255, 255, 0.2);
+}
+div[data-color="teal"] {
+    background-color: teal;
+    box-shadow: -1px -1px 18px 2px rgb(0, 0, 0, 0.3),
+    inset -3px -3px 10px 4px rgb(255, 255, 255, 0.2);
+}
